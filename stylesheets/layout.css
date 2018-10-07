@@ -30,13 +30,8 @@ body {
   animation: intro_normal 11s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
 }
 
-.startlink:hover {
-  -webkit-animation: 0;
-  -webkit-animation-play-state: 0;
-}
-
-
 @keyframes intro_normal {
+  
   0% {
     line-height: 33px;
     letter-spacing: 2em;
@@ -107,10 +102,6 @@ div.form {
 
 label {
   font-size: 20px;
-}
-
-label:lastchild {
-  margin-right: 0
 }
 
 input {
