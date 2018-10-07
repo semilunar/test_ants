@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>И тут муравей заговорил</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+
+	<section class="section_intro">
+		<h1 class="section__header_intro">Моноспектакль — спектакль, с участием единственного актера.</h1>
+		<p class="section__paragraph_intro">Основой любого спектакля является сверхзадача — то, ради чего художник делает ✳︎ это, что хочет донести зрителю. ✺ «Актер должен уметь → говорить» — именно так К. С. Станиславский назвал одну из ⌇ глав своих мемуаров. Речь ⍆ способна заменить все остальные инструменты ⏥ воздействия на зрителя ✦ (реквизит, костюмы, музыку и т. д.)</p>
+	</section>
+
+	<section class="section_middle">
+		<p class="section__paragraph_middle">монада монета монжус монизм моноза моноид монстр монитор монодия монокль монокок монолит монолог <i>моноспектакль</i> монотип моноплан монополь моноскоп монослой моностих монохорд монохром моноцикл монреаль моногамия моногиния монодрама моноканал монокуляр монополия монорельс <a class="link">монпансье<a class="span__img"></a></a></p>
+	</section>
+
+
+	<div id="app">
+
+		<h2 class="header">Выбери актёра для моноспектакля:</h2>
+		<div class="form">
+			<label for="choice" >Монстр</label>
+			<input type="radio" name="choice" id="monster" onclick="change(this)">
+			<label for="choice">Монреаль</label>
+			<input type="radio" name="choice" id="montreal" onclick="change(this)">
+			<label for="choice">Монпансье</label>
+			<input type="radio" name="choice" id="monpansier" onclick="change(this)">
+		</div>
+
+
+		<h2 class="header">Напиши реплику для актёра и наведи на него {порчу}:</h2>
+		<input class="input_text" type="text" v-model="inputText">
+		<div class="input__div" id="actor">{{inputText}}</div>
+
+	</div>
+
+
+	<footer class="footer">зрители апплодируют сидя, сейчас идёт 2018 год</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+		var app = new Vue({
+		  el: '#app',
+		  data: {
+		    inputText: '',
+		  }
+		})
+	</script>
+
+</body>
+</html>

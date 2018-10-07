@@ -1,0 +1,155 @@
+body {
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFAFA;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-moz-selection{
+    background-color: #000;
+    color: #aaa;
+}
+
+::selection{
+    background-color: #000;
+    color: white;
+}
+
+.section_intro {
+  background-color: #fff;
+  font-size: 66px;
+  color: #2151FF;
+  letter-spacing: 2em;
+  text-transform: uppercase;
+  line-height: 33px;
+  animation: intro_normal 11s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
+}
+
+.startlink:hover {
+  -webkit-animation: 0;
+  -webkit-animation-play-state: 0;
+}
+
+
+@keyframes intro_normal {
+  0% {
+    line-height: 33px;
+    letter-spacing: 2em;
+    text-decoration: none;
+  }
+
+  30% {
+    line-height: 60px;
+    letter-spacing: .1em;
+    text-decoration: underline;
+  }
+
+  100% {
+    line-height: 60px;
+    letter-spacing: .1em;
+    text-decoration: underline;
+  }
+
+}
+
+.section_middle {
+  margin: 203px 0 404px;
+}
+
+.section__paragraph_middle {
+  font-size: 66px;
+  color: magenta;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+  background-image: url(../img/monpansier.jpg);
+  width: 400px;
+  height: 350px;
+  background-size: cover;
+  position: absolute;
+  left: 30%
+  top: 30%;
+  z-index: 11;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+/* actor */
+
+#app {
+  background-color: white;
+  padding: 50px;
+}
+
+.header {
+  margin: 20px 0;
+  font-size: 24px
+}
+
+div.form {
+  padding: 40px 0;
+}
+
+label {
+  font-size: 20px;
+}
+
+label:lastchild {
+  margin-right: 0
+}
+
+input {
+  margin-right: 20px;
+}
+
+.input_text {
+  padding: 1em 1.5em;
+  font-size: 20px;
+  appearance: none;
+  outline: none;
+  line-height: normal;
+  border: 1px solid transparent;
+  border-bottom: solid 1px #000;
+  border-radius: 0;
+  text-align: center;
+}
+
+.input__div {
+  width: 600px;
+  height: 450px;
+  background-size: cover;
+  opacity: .9;
+  color: transparent;
+  margin: 0 auto;
+  padding: 40px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 80px;
+}
+
+.input__div:hover {
+  color: red;
+}
+
+.footer {
+  background-color: #2151FF;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 40px;
+}
