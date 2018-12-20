@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>И тут муравей заговорил</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Блок-схема</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
 
-	<section class="section_intro">
-		<h1 class="section__header_intro">Моноспектакль — спектакль, с участием единственного актера.</h1>
-		<p class="section__paragraph_intro">Основой любого спектакля является сверхзадача — то, ради чего художник делает ✳︎ это, что хочет донести зрителю. ✺ «Актер должен уметь → говорить» — именно так К. С. Станиславский назвал одну из ⌇ глав своих мемуаров. Речь ⍆ способна заменить все остальные инструменты ⏥ воздействия на зрителя ✦ (реквизит, костюмы, музыку и т. д.)</p>
-	</section>
+<main>
 
-	<section class="section_middle">
-		<p class="section__paragraph_middle">монада монета монжус монизм моноза моноид монстр монитор монодия монокль монокок монолит монолог <i>моноспектакль</i> монотип моноплан монополь моноскоп монослой моностих монохорд монохром моноцикл монреаль моногамия моногиния монодрама моноканал монокуляр монополия монорельс <a class="link">монпансье<a class="span__img"></a></a></p>
-	</section>
+<!-- <section class="section__audio">
+  <audio class="draggable" src="dialogue.mp3">
+</section>
+ -->
+
+<header class="header__circles">
+    <a href="#scheme" class="circle circle__1" data-circle_1="Начало" data-parallelogram_1="Ввод настроение" data-rhombus="Настроение хорошее?" data-rectangle_1="Улыбнитесь" data-rectangle_2="Поцелуйте соседа в парту" data-parallelogram_2="Вывод настроение улучшилось" data-circle_2="Конец">1</a>
+    <a href="#scheme" class="circle circle__2" data-circle_1="Начали" data-parallelogram_1="Ввод a, b, c" data-rhombus="a, b, c имеют НОД > a * b * c?" data-rectangle_1="Эти числа" data-rectangle_2="Эти числа другие" data-parallelogram_2="Вывод a % b % c" data-circle_2="Было сложновато">2</a>
+    <a href="#scheme" class="circle circle__3" data-circle_1="Начинаем" data-parallelogram_1="Ввод новый поворот" data-rhombus="Что он нам несёт?" data-rectangle_1="Пропасть" data-rectangle_2="Взлёт" data-parallelogram_2="Вывод не разберёшь" data-circle_2="Вот">3</a>
+    <a href="#scheme" class="circle circle__4" data-circle_1="Закончили" data-parallelogram_1="Ввод в заблужение" data-rhombus="Условие или условность?" data-rectangle_1="Услада" data-rectangle_2="Озлобились" data-parallelogram_2="Вывод на волоске" data-circle_2="Окончание">4</a>
+</header>
+
+<section class="section__intro">
+  <p>Ode to my family, dedicated to my first IT teacher. Woman with a mask by schlemmer seated in a breuer chair
+    <span class="section_span__intro">
+      <img class="img__intro" src="images/chair.jpg">
+      <!-- <span class="author__intro">Jonathan de Pas. «Chair». 1967</span> -->
+    </span>
+  Under the framework of infinitésimal art: Lick the wall, air or vacuum; invent the substance
+    <span class="section_span__intro">
+      <img class="img__intro" src="images/sofa.jpg">
+    </span>
+    of a new impossible tastes. Feel the air or vacuum; invent
+    <span class="section_span__intro">
+      <img class="img__intro" src="images/things.jpg">
+    </span>
+  a new, non-existent touch material. Breathe the air or rien, invent inconceivable perfumes.</p>
+</section>
+
+<img src="images/pic.png">
+
+<section class="section__scheme" id="scheme">
+  <div class="sсheme__circle sсheme__circle_1">Начало</div>
+  <img class="scheme__arrow" src="images/line.svg"></img>
+  <div class="scheme_parallelogram scheme_parallelogram_1">Ввод настроения</div>
+  <img class="scheme__arrow" src="images/line.svg"></img>
+  <div class="sсheme__rhombus" style="border: none;">Настроение хорошее?</div>
+  <section class="scheme__two_arrows arrows__1">
+    <img class="scheme__arrow arrow_left_1" src="images/line_2.svg"></img>
+    <img class="scheme__arrow" src="images/line_2.svg"></img>
+  </section>
+  <section class="scheme__two_answers">
+    <div class="scheme__rectangle scheme__rectangle_1">Улыбнитесь</div>
+    <div class="scheme__rectangle scheme__rectangle_2">Поцелуйте соседа в парту</div>
+  </section>
+  <section class="scheme__two_arrows arrows__2">
+    <img class="scheme__arrow arrow_left_2" src="images/line_3.svg"></img>
+    <img class="scheme__arrow arrow_right_2" src="images/line_3.svg"></img>
+  </section>
+  <div class="scheme_parallelogram scheme_parallelogram_2" style="margin-top: -40px;">Вывод настроение улучшилось</div>
+  <img class="scheme__arrow" src="images/line.svg"></img>
+  <div class="sсheme__circle sсheme__circle_2">Конец</div>
+</section>
+
+<section class="section__index">
+  <p class="paragraph__index">Моя вторая по счёту учительница по информатике говорила, что ученик должен быть упорным, и если он сломает обе руки, пусть лучше будет в зубах держать ручку и писать, чем бездельничать. </p>
+  <p class="paragraph__index">Те каракули которые я взглядом рисую в воздухе науке не подвластны. Использую воздушные линейку, циркуль, транспортир. Простейшая блок-схема с циклом. Условие в ромбе: сделал ли ты сегодня кого-нибудь счастливым? стрелочка нет возвращает на предыдущий прямоугольник, в котором</p>
+  <img class="img__index" src="images/face.jpg"></img>
+</section>
 
 
-	<div id="app">
+  <footer class="footer">
+    <p class="footer__paragraph fixed">нарисуй мне кружок</p>
+  </footer>
 
-		<h2 class="header">Выбери актёра для моноспектакля:</h2>
-		<div class="form">
-			<label for="choice" >Монстр</label>
-			<input type="radio" name="choice" id="monster" onclick="change(this)">
-			<label for="choice">Монреаль</label>
-			<input type="radio" name="choice" id="montreal" onclick="change(this)">
-			<label for="choice">Монпансье</label>
-			<input type="radio" name="choice" id="monpansier" onclick="change(this)">
-		</div>
+</main>
 
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="scripts/script.js"></script> 
 
-		<h2 class="header">Напиши реплику для актёра и наведи на него {порчу}:</h2>
-		<input class="input_text" type="text" v-model="inputText">
-		<div class="input__div" id="actor">{{inputText}}</div>
-
-	</div>
-
-
-	<footer class="footer">зрители апплодируют сидя, сейчас идёт 2018 год</footer>
-
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script>
-		var app = new Vue({
-		  el: '#app',
-		  data: {
-		    inputText: '',
-		  }
-		})
-	</script>
+    <script type="text/javascript">
+    var str = 'Где сердце ваше, там будет и сокровище ваше';
+    console.log ( '%c%s', 'font: Forum;', str );
+    </script>
 
 </body>
 </html>
